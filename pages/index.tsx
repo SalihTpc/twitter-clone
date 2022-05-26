@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Feeds from '../components/Feeds'
 import Sidebar from '../components/Sidebar'
+import Widgets from '../components/Widgets'
 
 const Home: NextPage = () => {
   return (
@@ -11,9 +12,10 @@ const Home: NextPage = () => {
         <title>Twitter Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-row">
+      <main className="grid grid-cols-9">
         <Sidebar />
         <Feeds />
+        <Widgets />
       </main>
     </div>
   )
